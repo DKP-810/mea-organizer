@@ -11,7 +11,7 @@ export function Column({ column, tasks, onCardClick, onAddClick, isMobile, lande
   const taskIds = tasks.map((t) => t.id)
 
   return (
-    <div className={`flex flex-col ${isMobile ? 'mb-2' : 'w-72 shrink-0'}`}>
+    <div className={`flex flex-col ${isMobile ? 'mb-2' : 'w-full'}`}>
       <div
         className={`${column.headerBg} ${column.headerText} flex items-center justify-between px-4 py-3
           ${isMobile ? 'rounded-xl cursor-pointer' : 'rounded-t-xl'}`}

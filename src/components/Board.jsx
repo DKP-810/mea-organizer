@@ -147,7 +147,7 @@ export function Board({ tasks, addTask, updateTask, deleteTask, moveTask, reorde
               ))}
             </div>
           ) : (
-            <div className="flex gap-4 items-start pb-6 overflow-x-auto">
+            <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 pb-6">
               {COLUMNS.map((col) => (
                 <Column
                   key={col.id}
