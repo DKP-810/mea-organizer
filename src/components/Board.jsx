@@ -111,7 +111,7 @@ export function Board({ tasks, addTask, updateTask, deleteTask, moveTask, reorde
       <header className="bg-mea-blue text-white px-4 py-4 shadow-md">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-bold tracking-tight">MEA Task Board</h1>
+            <h1 className="text-xl font-bold tracking-tight">MEA CLL Task Board</h1>
             <p className="text-blue-200 text-xs mt-0.5">Michigan Education Association</p>
           </div>
           <button
