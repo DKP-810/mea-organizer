@@ -54,7 +54,7 @@ export function TaskModal({ task, defaultStatus, onSave, onDelete, onClose }) {
             <label className="block text-sm font-medium text-gray-700 mb-1">Task title *</label>
             <input
               autoFocus
-              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-mea-navy focus:border-transparent"
               placeholder="What needs to be done?"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -64,7 +64,7 @@ export function TaskModal({ task, defaultStatus, onSave, onDelete, onClose }) {
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Details (optional)</label>
             <textarea
-              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-mea-navy focus:border-transparent resize-none"
               placeholder="Any additional context..."
               rows={3}
               value={description}
@@ -103,9 +103,9 @@ export function TaskModal({ task, defaultStatus, onSave, onDelete, onClose }) {
 
           {status === 'waiting_on' && (
             <div>
-              <label className="block text-sm font-medium text-purple-700 mb-1">Waiting on who/what?</label>
+              <label className="block text-sm font-medium text-[#4A2D5A] mb-1">Waiting on who/what?</label>
               <input
-                className="w-full border border-purple-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                className="w-full border border-[#C4A8D1] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#5B3A6E] focus:border-transparent"
                 placeholder="e.g. Dr. Henderson, IT department, budget approval..."
                 value={waitingOn}
                 onChange={(e) => setWaitingOn(e.target.value)}
@@ -117,7 +117,7 @@ export function TaskModal({ task, defaultStatus, onSave, onDelete, onClose }) {
             <label className="block text-sm font-medium text-gray-700 mb-1">Due date (optional)</label>
             <input
               type="date"
-              className="border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-mea-navy focus:border-transparent"
               value={dueDate}
               onChange={(e) => setDueDate(e.target.value)}
             />

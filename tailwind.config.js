@@ -5,8 +5,9 @@ export default {
     extend: {
       colors: {
         mea: {
-          blue: '#003087',
-          gold: '#F5A800',
+          red: '#A6192E',
+          navy: '#1F3864',
+          charcoal: '#231F20',
         },
       },
     },

@@ -108,7 +108,7 @@ export function Board({ tasks, addTask, updateTask, deleteTask, moveTask, reorde
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-mea-blue text-white px-4 py-4 shadow-md">
+      <header className="bg-mea-navy text-white px-4 py-4 shadow-md">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold tracking-tight">MEA CLL Task Board</h1>
@@ -116,7 +116,7 @@ export function Board({ tasks, addTask, updateTask, deleteTask, moveTask, reorde
           </div>
           <button
             onClick={() => openNewTask('immediate')}
-            className="flex items-center gap-2 bg-mea-gold text-gray-900 font-semibold text-sm px-4 py-2 rounded-xl hover:brightness-110 transition-all active:scale-95"
+            className="flex items-center gap-2 bg-mea-red text-white font-semibold text-sm px-4 py-2 rounded-xl hover:brightness-110 transition-all active:scale-95"
           >
             <Plus size={18} />
             <span className="hidden sm:inline">New Task</span>
@@ -186,7 +186,7 @@ export function Board({ tasks, addTask, updateTask, deleteTask, moveTask, reorde
       {isMobile && (
         <button
           onClick={() => openNewTask('immediate')}
-          className="fixed bottom-6 right-6 bg-mea-blue text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:brightness-110 active:scale-95 transition-all z-40"
+          className="fixed bottom-6 right-6 bg-mea-navy text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:brightness-110 active:scale-95 transition-all z-40"
         >
           <Plus size={26} />
         </button>

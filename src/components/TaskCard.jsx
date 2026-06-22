@@ -32,7 +32,7 @@ export function TaskCard({ task, column, onClick, overlay = false, landed = fals
       {...(overlay ? {} : listeners)}
       className={`bg-white rounded-xl border shadow-sm mb-2 select-none
         ${overlay
-          ? 'shadow-xl ring-2 ring-blue-400 rotate-1 cursor-grabbing'
+          ? 'shadow-xl ring-2 ring-mea-navy rotate-1 cursor-grabbing'
           : 'cursor-grab hover:shadow-md active:cursor-grabbing active:shadow-lg'}
         ${column.borderColor} border-l-4 transition-shadow
         ${landed ? 'card-land' : ''}`}
@@ -50,7 +50,7 @@ export function TaskCard({ task, column, onClick, overlay = false, landed = fals
             )}
 
             {task.status === 'waiting_on' && task.waitingOn && (
-              <div className="mt-2 inline-flex items-center gap-1.5 bg-purple-50 text-purple-700 text-xs font-medium px-2 py-1 rounded-full border border-purple-200">
+              <div className="mt-2 inline-flex items-center gap-1.5 bg-[#F3ECF7] text-[#4A2D5A] text-xs font-medium px-2 py-1 rounded-full border border-[#C4A8D1]">
                 <Clock size={11} />
                 <span>Waiting on: {task.waitingOn}</span>
               </div>

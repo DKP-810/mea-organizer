@@ -46,7 +46,7 @@ export function CompletedDrawer({ tasks, onRestore, onDelete }) {
                 </div>
                 <button
                   onClick={() => onRestore(task.id)}
-                  className="flex items-center gap-1 text-xs text-teal-600 hover:text-teal-700 font-medium px-2 py-1 rounded-lg hover:bg-teal-50 transition-colors shrink-0"
+                  className="flex items-center gap-1 text-xs text-[#2A7A5F] hover:text-[#1F5C4E] font-medium px-2 py-1 rounded-lg hover:bg-[#E8F5F0] transition-colors shrink-0"
                 >
                   <RotateCcw size={13} />
                   Restore
